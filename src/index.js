@@ -8,10 +8,10 @@ const refs = {
     buttonText: document.querySelector('.button-text')
 }
 
-let randomColor = null;
+let randomColorId = null;
 
 refs.buttonStart.addEventListener('click', () => {
-        randomColor = setInterval(() => {
+    randomColorId = setInterval(() => {
         document.body.style.backgroundColor = `${colors[randomIntegerFromInterval(0, colors.length - 1)]}`;
         }, 1000);
     refs.buttonStart.setAttribute('disabled', 'disabled');
@@ -20,7 +20,7 @@ refs.buttonStart.addEventListener('click', () => {
     });
 
 refs.buttonStop.addEventListener('click', () => {
-    clearInterval(randomColor);
+    clearInterval(randomColorId);
     refs.buttonStart.removeAttribute('disabled');
     refs.buttonStart.classList.remove('disabled-border');
     refs.buttonText.classList.remove('disabled-text')   

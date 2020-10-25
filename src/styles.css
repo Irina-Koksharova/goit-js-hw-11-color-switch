@@ -43,7 +43,7 @@ button:focus .button-text {
 
 .disabled-border {
   border: 4px solid #2c57a3;
-  cursor: wait;
+  cursor: not-allowed;
 }
 
 .disabled-text {
