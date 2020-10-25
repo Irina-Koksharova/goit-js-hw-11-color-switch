@@ -7,6 +7,8 @@ const refs = {
     buttonStop: document.querySelector('[data-action="stop"]'),
 }
 
+// Вариант 1
+
 refs.buttonStart.addEventListener('click', () => {
     timer.start();
 });
@@ -38,6 +40,8 @@ const timer = {
 const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
+// Вариант 2
 
 // let randomColorId = null;
 
